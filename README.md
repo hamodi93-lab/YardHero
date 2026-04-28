@@ -1,140 +1,140 @@
-# YardHero Web Application
+# 🌿 YardHero
 
-YardHero is a full-stack web application for lawn care, snow removal, and outdoor service requests. The project uses a React frontend, Express backend, and SQLite database initialized from a SQL script.
+**YardHero** is a full-stack web application that connects homeowners with trusted local providers for lawn care, snow removal, and outdoor services in Cleveland, Ohio.
 
-## Project Structure
+---
 
-```text
-YardHeroFull/
-‚îú‚îÄ‚îÄ frontend/       React application with React Router
-‚îú‚îÄ‚îÄ backend/        Express API server
-‚îú‚îÄ‚îÄ database/       SQL schema and seed data
-‚îú‚îÄ‚îÄ README.md
-‚îú‚îÄ‚îÄ reflection-summary.md
-‚îî‚îÄ‚îÄ prompt-log.md
-```
+## 📸 Application Preview
 
-## Pages and Routing
+*Add a screenshot of your homepage below*
 
-The frontend uses React Router and includes multiple pages:
+![YardHero Preview](<img width="1346" height="668" alt="Screen Shot 2026-04-28 at 3 22 56 PM" src="https://github.com/user-attachments/assets/60769ccb-dbb1-439a-b9d1-aee719f77c02" />
+./screenshot.png)
 
-1. `/` - Home/Landing page
-2. `/dashboard` - Data dashboard showing saved service requests
-3. `/manage` - CRUD page for creating, editing, and deleting service requests
-4. `/login` - Demo login page showing edge-case handling for incorrect credentials
+---
 
-## System Architecture
+## 🚀 Project Overview
 
-The frontend communicates with the backend using `fetch()` requests to the Express API at `http://localhost:5000/api`. The backend reads and writes data to a SQLite database. Data persists after browser refresh because records are stored in `backend/yardhero.db`, which is initialized using `database/yardhero.sql`.
+YardHero allows users to quickly request yard services and get matched with reliable providers. The system demonstrates a complete full-stack workflow including frontend UI, backend API, and database integration.
 
-## Installation Instructions
+This project was developed as a capstone assignment to showcase real-world web application development.
 
-### 1. Start the backend
+---
 
-```bash
+## ✨ Key Features
+
+* Request lawn care and snow removal services
+* Dashboard to view and track requests
+* Manage Requests page
+* Admin login functionality
+* Provider matching system
+* Verified provider status
+* Completion photo requirement
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
+
+* HTML
+* CSS
+* JavaScript
+* React
+
+**Backend**
+
+* Node.js
+* Express
+
+**Database**
+
+* MySQL / PostgreSQL (via Prisma)
+
+---
+
+## 📂 Project Structure
+
+/frontend → React components and UI
+/backend → Server, API routes
+/database → SQL schema and seed file
+
+---
+
+## ⚙️ How to Run the Project
+
+### 1. Clone the repository
+
+git clone https://github.com/your-username/yardhero.git
+cd yardhero
+
+### 2. Install dependencies
+
+npm install
+
+### 3. Start backend
+
 cd backend
-npm install
-npm start
-```
+node server.js
 
-The backend runs at:
+### 4. Start frontend
 
-```text
-http://localhost:5000
-```
-
-### 2. Start the frontend
-
-Open a second terminal:
-
-```bash
 cd frontend
-npm install
-npm run dev
-```
+npm start
 
-The frontend runs at the URL shown in the terminal, usually:
+---
 
-```text
-http://localhost:5173
-```
+## 🧪 Testing the Application
 
-## Demo Login
+1. Open the application in your browser
+2. Navigate to **Manage Requests**
+3. Add a new request
+4. Go to **Dashboard**
+5. Refresh the page
 
-```text
-Email: admin@yardhero.com
-Password: YardHero123
-```
+If the request remains visible, the system is working correctly.
 
-Incorrect login credentials display an error message.
+---
 
-## API Documentation
+## 🎯 Project Purpose
 
-### GET `/api/requests`
-Returns all service requests.
+The goal of this project is to demonstrate:
 
-### GET `/api/requests/:id`
-Returns one service request by ID.
+* Full-stack development
+* API integration
+* Database connectivity
+* User interface design
+* Real-world business solution development
 
-### POST `/api/requests`
-Creates a new service request.
+---
 
-Example body:
+## 🏷️ Branding
 
-```json
-{
-  "customerName": "John Smith",
-  "email": "john@example.com",
-  "phone": "216-555-1234",
-  "address": "Cleveland, OH",
-  "serviceType": "Lawn Care",
-  "jobSize": "Medium",
-  "notes": "Need mowing this week.",
-  "status": "Pending"
-}
-```
+**Name:** YardHero
+**Tagline:** Use YardHero
+**Location:** Cleveland, Ohio
+**Services:** Lawn care, snow removal, outdoor services
 
-### PUT `/api/requests/:id`
-Updates an existing service request.
+---
 
-### DELETE `/api/requests/:id`
-Deletes a service request.
+## 👤 Author
 
-### POST `/api/login`
-Validates demo admin credentials.
+Mohammed Ali
+Information Systems & Technology
 
-## CRUD Entity
+---
 
-The main CRUD entity is `Service Request`.
+## 📌 Future Improvements
 
-Fields:
+* Live tracking of providers
+* Online payment integration
+* Provider rating system
+* Mobile app version
+* AI-based pricing system
 
-- id
-- customer_name
-- email
-- phone
-- address
-- service_type
-- job_size
-- notes
-- status
-- created_at
+---
 
-## Video Demonstration Checklist
+## 📄 License
 
-Record a 3‚Äì5 minute video showing:
-
-1. Home page navigation
-2. Dashboard page
-3. Manage Requests page
-4. Create a new request
-5. Refresh the browser and show the request still exists
-6. Edit the request status
-7. Delete the request
-8. Try login with incorrect credentials and show the error
-9. Try submitting an empty request and show validation
-
-## Notes
-
-This project is designed for local full-stack demonstration. GitHub Pages can only host static frontend files and does not run the Express backend.
-
+This project is for educational purposes only.
+<img width="1356" height="664" alt="Screen Shot 2026-04-28 at 3 31 15 PM" src="https://github.com/user-attachments/assets/f93947d3-471b-4d23-89e4-be00cef947f6" />
