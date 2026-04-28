@@ -1,10 +1,10 @@
-# 🌿 YardHero
+#  YardHero
 
 **YardHero** is a full-stack web application that connects homeowners with trusted local providers for lawn care, snow removal, and outdoor services in Cleveland, Ohio.
 
 ---
 
-## 📸 Application Preview
+##  Application Preview
 
 *Add a screenshot of your homepage below*
 
