@@ -1,61 +1,327 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>YardHero</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>YardHero | Lawn Care & Snow Removal</title>
+
 <style>
-body { font-family: Arial; background:#0f172a; color:white; text-align:center; }
-h1 { color:#22c55e; }
-.box { background:#1e293b; padding:20px; margin:20px; border-radius:10px; }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #07111f;
+  color: white;
+}
+
+header {
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #06101d;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #22c55e;
+}
+
+nav a {
+  color: #cbd5e1;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 90px 8%;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(34,197,94,0.15);
+  color: #86efac;
+  padding: 10px 18px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 58px;
+  line-height: 1.05;
+  margin: 0;
+}
+
+.hero p {
+  color: #cbd5e1;
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 25px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #22c55e, #38bdf8);
+  color: #06101d;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.phone-card {
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  border: 1px solid #334155;
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.status {
+  background: #22c55e;
+  color: #052e16;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.job-box {
+  background: #111827;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.section {
+  padding: 70px 8%;
+}
+
+.section h2 {
+  font-size: 38px;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 35px;
+}
+
+.card {
+  background: #111827;
+  border: 1px solid #334155;
+  padding: 28px;
+  border-radius: 24px;
+}
+
+.card h3 {
+  font-size: 24px;
+}
+
+.card p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.estimate {
+  max-width: 700px;
+  margin: 40px auto 0;
+  background: #111827;
+  border: 1px solid #334155;
+  padding: 30px;
+  border-radius: 25px;
+}
+
+select, input, textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0 20px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+}
+
+.price {
+  background: linear-gradient(90deg, #22c55e, #38bdf8);
+  color: #06101d;
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.form {
+  max-width: 700px;
+  margin: 35px auto 0;
+  background: #111827;
+  border: 1px solid #334155;
+  padding: 30px;
+  border-radius: 25px;
+}
+
+button {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #22c55e, #38bdf8);
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #06101d;
+  color: #94a3b8;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  nav {
+    display: none;
+  }
+}
 </style>
 </head>
 
 <body>
 
-<h1>YardHero</h1>
-<p>The fastest way to book yard services</p>
+<header>
+  <div class="logo">🌿 YardHero</div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#estimate">Estimate</a>
+    <a href="#request">Book</a>
+  </nav>
+</header>
 
-<div class="box">
-<h2>Services</h2>
-<p>Lawn Care • Snow Removal • Cleanup</p>
-</div>
+<section class="hero">
+  <div>
+    <span class="badge">Cleveland Lawn Care & Snow Removal</span>
+    <h1>Book trusted yard help in minutes.</h1>
+    <p>
+      YardHero connects homeowners with reliable local providers for lawn care,
+      snow removal, cleanup, and outdoor jobs — fast, simple, and professional.
+    </p>
+    <a href="#request" class="btn">Request Service</a>
+  </div>
 
-<div class="box">
-<h2>Estimate</h2>
+  <div class="phone-card">
+    <span class="status">Provider Matched</span>
+    <h2>Front Yard Mowing</h2>
+    <div class="job-box">
+      <p><strong>Provider:</strong> Mike’s Lawn Team</p>
+      <p><strong>ETA:</strong> 18 minutes</p>
+      <p><strong>Status:</strong> Verified Provider</p>
+      <p><strong>Photos:</strong> Required after completion</p>
+    </div>
+  </div>
+</section>
 
-<select id="service">
-<option>Lawn Care</option>
-<option>Snow Removal</option>
-</select>
+<section class="section" id="services">
+  <h2>Services</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>🌿 Lawn Care</h3>
+      <p>Mowing, edging, trimming, and regular yard maintenance.</p>
+    </div>
+    <div class="card">
+      <h3>❄️ Snow Removal</h3>
+      <p>Driveway and sidewalk snow clearing during Cleveland winters.</p>
+    </div>
+    <div class="card">
+      <h3>🚚 Auto Dispatch</h3>
+      <p>Match with nearby verified providers based on your job request.</p>
+    </div>
+  </div>
+</section>
 
-<select id="size">
-<option>Small</option>
-<option>Medium</option>
-<option>Large</option>
-</select>
+<section class="section" id="estimate">
+  <h2>Instant Price Estimate</h2>
 
-<h3 id="price">$55 - $95</h3>
-</div>
+  <div class="estimate">
+    <label>Service Type</label>
+    <select id="service">
+      <option>Lawn Care</option>
+      <option>Snow Removal</option>
+    </select>
+
+    <label>Job Size</label>
+    <select id="size">
+      <option>Small</option>
+      <option>Medium</option>
+      <option>Large</option>
+    </select>
+
+    <div class="price" id="price">$55 - $95</div>
+  </div>
+</section>
+
+<section class="section" id="request">
+  <h2>Request Service</h2>
+
+  <div class="form">
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email Address">
+    <input type="text" placeholder="Service Address">
+    <input type="tel" placeholder="Phone Number">
+    <textarea rows="5" placeholder="Describe the job"></textarea>
+    <button onclick="alert('Thank you! Your YardHero request has been submitted.')">
+      Submit Request
+    </button>
+  </div>
+</section>
+
+<footer>
+  © 2026 YardHero — Use YardHero
+</footer>
 
 <script>
-const s = document.getElementById("service");
-const z = document.getElementById("size");
-const p = document.getElementById("price");
+const service = document.getElementById("service");
+const size = document.getElementById("size");
+const price = document.getElementById("price");
 
-function update(){
-if(s.value==="Lawn Care"){
-if(z.value==="Small") p.innerText="$35 - $65";
-if(z.value==="Medium") p.innerText="$55 - $95";
-if(z.value==="Large") p.innerText="$85 - $150";
-}
-if(s.value==="Snow Removal"){
-if(z.value==="Small") p.innerText="$30 - $55";
-if(z.value==="Medium") p.innerText="$45 - $80";
-if(z.value==="Large") p.innerText="$70 - $120";
-}
+function updatePrice() {
+  if (service.value === "Lawn Care") {
+    if (size.value === "Small") price.innerText = "$35 - $65";
+    if (size.value === "Medium") price.innerText = "$55 - $95";
+    if (size.value === "Large") price.innerText = "$85 - $150";
+  }
+
+  if (service.value === "Snow Removal") {
+    if (size.value === "Small") price.innerText = "$30 - $55";
+    if (size.value === "Medium") price.innerText = "$45 - $80";
+    if (size.value === "Large") price.innerText = "$70 - $120";
+  }
 }
 
-s.onchange = update;
-z.onchange = update;
+service.addEventListener("change", updatePrice);
+size.addEventListener("change", updatePrice);
+updatePrice();
 </script>
 
 </body>
