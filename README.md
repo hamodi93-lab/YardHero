@@ -8,12 +8,12 @@
 
 *Add a screenshot of your homepage below*
 
-![YardHero Preview](<img width="1346" height="668" alt="Screen Shot 2026-04-28 at 3 22 56 PM" src="https://github.com/user-attachments/assets/60769ccb-dbb1-439a-b9d1-aee719f77c02" />
-./screenshot.png)
+![YardHero Preview]<img width="1346" height="668" alt="Screen Shot 2026-04-28 at 3 22 56 PM" src="https://github.com/user-attachments/assets/60769ccb-dbb1-439a-b9d1-aee719f77c02" />
+
 
 ---
 
-## 🚀 Project Overview
+##  Project Overview
 
 YardHero allows users to quickly request yard services and get matched with reliable providers. The system demonstrates a complete full-stack workflow including frontend UI, backend API, and database integration.
 
@@ -21,7 +21,7 @@ This project was developed as a capstone assignment to showcase real-world web a
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 * Request lawn care and snow removal services
 * Dashboard to view and track requests
@@ -33,7 +33,7 @@ This project was developed as a capstone assignment to showcase real-world web a
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 **Frontend**
 
@@ -53,7 +53,7 @@ This project was developed as a capstone assignment to showcase real-world web a
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 /frontend → React components and UI
 /backend → Server, API routes
@@ -61,11 +61,11 @@ This project was developed as a capstone assignment to showcase real-world web a
 
 ---
 
-## ⚙️ How to Run the Project
+##  How to Run the Project
 
 ### 1. Clone the repository
 
-git clone https://github.com/your-username/yardhero.git
+github [https://github.com/your-username/yardhero.git](https://hamodi93-lab.github.io/YardHero/)
 cd yardhero
 
 ### 2. Install dependencies
@@ -84,7 +84,7 @@ npm start
 
 ---
 
-## 🧪 Testing the Application
+##  Testing the Application
 
 1. Open the application in your browser
 2. Navigate to **Manage Requests**
@@ -96,7 +96,7 @@ If the request remains visible, the system is working correctly.
 
 ---
 
-## 🎯 Project Purpose
+##  Project Purpose
 
 The goal of this project is to demonstrate:
 
@@ -108,7 +108,7 @@ The goal of this project is to demonstrate:
 
 ---
 
-## 🏷️ Branding
+##  Branding
 
 **Name:** YardHero
 **Tagline:** Use YardHero
@@ -117,14 +117,14 @@ The goal of this project is to demonstrate:
 
 ---
 
-## 👤 Author
+##  Author
 
 Mohammed Ali
 Information Systems & Technology
 
 ---
 
-## 📌 Future Improvements
+##  Future Improvements
 
 * Live tracking of providers
 * Online payment integration
@@ -134,7 +134,7 @@ Information Systems & Technology
 
 ---
 
-## 📄 License
+##  License
 
 This project is for educational purposes only.
 <img width="1356" height="664" alt="Screen Shot 2026-04-28 at 3 31 15 PM" src="https://github.com/user-attachments/assets/f93947d3-471b-4d23-89e4-be00cef947f6" />
