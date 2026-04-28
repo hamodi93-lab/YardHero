@@ -6,7 +6,6 @@
 
 ##  Application Preview
 
-*Add a screenshot of your homepage below*
 
 ![YardHero Preview]<img width="1346" height="668" alt="Screen Shot 2026-04-28 at 3 22 56 PM" src="https://github.com/user-attachments/assets/60769ccb-dbb1-439a-b9d1-aee719f77c02" />
 
